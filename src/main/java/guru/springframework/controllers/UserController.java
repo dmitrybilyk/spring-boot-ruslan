@@ -41,6 +41,11 @@ public class UserController {
         return "product/addEditUser";
     }
 
+    @RequestMapping("/login")
+    public String login(){
+        return "product/login";
+    }
+
     @RequestMapping("/user/new")
     public String newUser(Model model){
         User user = new User();
